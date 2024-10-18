@@ -1,0 +1,21 @@
+/* -------------home css------------- */
+
+header {
+  height: 80px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+header div{
+  height: 100%;
+}
+
+
+
+/* -------------footer css------------- */
+footer {
+  height: 400px;
+  width: 100%;
+  border: 1px solid black;
+}
