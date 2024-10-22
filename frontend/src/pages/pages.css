@@ -32,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.314); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.116); /* Adjust the opacity as needed */
   z-index: 2;
 }
 
@@ -100,6 +100,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .project::before {
   content: "";
@@ -108,8 +109,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.314); /* Adjust the opacity as needed */
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.314);
 }
 
 .project-h1 {
@@ -118,7 +118,9 @@
   top: 19%;
   left: 7.5%;
   font-size: 55px;
+  font-weight: bold;
   font-family: "Kanit", sans-serif;
+  z-index: 2;
 }
 .project-h2 {
   color: white;
@@ -160,5 +162,197 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.314); /* Adjust the opacity as needed */
+}
+
+.who-h1 {
+  color: white;
+  position: absolute;
+  top: 19%;
+  left: 7.5%;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
   z-index: 2;
+}
+.who-h2 {
+  color: white;
+  position: absolute;
+  top: 26%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h3 {
+  color: white;
+  position: absolute;
+  top: 33%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h4 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h5 {
+  color: white;
+  position: absolute;
+  top: 47%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+
+.who-button {
+  position: absolute;
+  top: 57%;
+  left: 7.5%;
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.441);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+/* feature css */
+.feature {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+.inner-feature {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+.inner-feature-textdiv {
+  /* border: 1px solid salmon; */
+  height: auto;
+  padding: 20px 0px;
+}
+.inner-feature-text {
+  margin-left: 8.5%;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+}
+.inner-feature-imagediv {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m4.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-feature-imagediv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.146); /* Adjust the opacity as needed */
+}
+.feature-text {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
+}
+
+.feature-2 {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.inner-feature-2 {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+
+.inner-feature-imagediv-2 {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m2.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-text-2 {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
+}
+
+.feature-3 {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.inner-feature-3 {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+
+.inner-feature-imagediv-3 {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m5.jpg"); /* Replace with your image path */
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-feature-imagediv-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.feature-text-3 {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
 }

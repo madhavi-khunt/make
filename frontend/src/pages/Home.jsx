@@ -60,17 +60,59 @@ function Home() {
       {/* ---------- Project section ---------- */}
 
       {/* ---------- who we are section ---------- */}
-
       <div className="who">
-        {/* <h1 className="project-h1">Make is a different kind </h1>
-        <h1 className="project-h2">of architecture practice.</h1>
-        <button className="project-button">
-          Projects&nbsp;
+        <h1 className="who-h1">
+          We’re free-thinking, not limited by a house style.
+        </h1>
+        <h1 className="who-h2">
+          We’re all partners, finding solutions together.
+        </h1>
+        <h1 className="who-h3">We have world-class expertise.</h1>
+        <h1 className="who-h4">We promise discovery and new possibilities.</h1>
+        <h1 className="who-h5">We design to create a resilient legacy.</h1>
+        <button className="who-button">
+          Who We Are&nbsp;
           <FontAwesomeIcon icon={faPlay} />
-        </button> */}
+        </button>
       </div>
-
       {/* ---------- who we are section ---------- */}
+
+      {/* ---------- featured section ---------- */}
+      <div className="feature">
+        <div className="inner-feature">
+          <div className="inner-feature-textdiv">
+            <h1 className="inner-feature-text">Featured</h1>
+          </div>
+          <div className="inner-feature-imagediv">
+            <h1 className="feature-text">Victoria Coast</h1>
+          </div>
+        </div>
+      </div>
+      <div className="feature-2">
+        <div className="inner-feature-2">
+          {/* <div className="inner-feature-textdiv">
+            <h1 className="inner-feature-text">Featured</h1>
+          </div> */}
+          <div className="inner-feature-imagediv-2">
+            <h1 className="feature-text-2">Eden</h1>
+          </div>
+        </div>
+      </div>
+      <div className="feature-3">
+        <div className="inner-feature-3">
+          {/* <div className="inner-feature-textdiv">
+            <h1 className="inner-feature-text">Featured</h1>
+          </div> */}
+          <div className="inner-feature-imagediv-3">
+            <h1 className="feature-text-3">Capella Syndney</h1>
+          </div>
+        </div>
+      </div>
+      {/* ---------- featured section ---------- */}
+
+      {/* ---------- Thinking section ---------- */}
+      <div></div>
+      {/* ---------- Thinking section ---------- */}
     </>
   );
 }

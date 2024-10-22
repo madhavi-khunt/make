@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
+import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,9 +31,10 @@ function Header() {
                 isScrolled ? "text-visible" : "text-hidden"
               }`}
             >
-              <Link to="/" className="kanit-bold">
+              {/* <Link to="/" className="kanit-bold">
                 make
-              </Link>
+              </Link> */}
+              <img src={logo} alt="Logo" className="header-logo" />
             </h1>
             <nav className="nav-links">
               <Link to="/meetmake">Meet Make</Link>
@@ -39,7 +43,9 @@ function Header() {
               <Link to="/media">Media</Link>
               <Link to="/perspective">Perspective</Link>
               <Link to="/studios">Studios</Link>
-              <Link to="/studios">Studios</Link>
+              <Link to="/studios">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </Link>
             </nav>
           </div>
         </header>

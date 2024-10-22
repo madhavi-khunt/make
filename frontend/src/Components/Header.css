@@ -12,7 +12,7 @@
   justify-content: center;
   padding: 20px 0;
   transition: top 0.3s, background-color 0.3s;
-  z-index: 100;
+  z-index: 3;
 }
 header div {
   height: 100%;
@@ -25,7 +25,10 @@ header div {
 .header.hide {
   top: -100px;
 }
-
+.header-logo {
+  height: 30px;
+  width: 100px;
+}
 /* Show header with white background when scrolling up */
 .header.show {
   background-color: white;
@@ -57,6 +60,7 @@ header div {
 /* Header text visible after scroll */
 .text-visible {
   opacity: 1;
+  z-index: 2;
   transform: translateX(0); /* Reset position */
   transition: opacity 0.5s, transform 0.5s;
 }
@@ -69,16 +73,23 @@ header div {
   letter-spacing: -1px;
   font-stretch: condensed;
 }
+.nav-links {
+  /* border: 2px solid white; */
+  padding-right: 28px;
+}
 .nav-links a {
   text-decoration: none;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   /* font-weight: bold; */
 }
 
 .nav-links a:hover {
   color: black;
+}
+.header.scrolled {
+  background-color: white;
 }
 
 .header.scrolled .nav-links a {
