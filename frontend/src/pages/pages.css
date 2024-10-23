@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+button:hover {
+  cursor: pointer;
+}
 /*  ----------------- home page css -----------------  */
 /* Hero Section */
 .hero {
@@ -355,4 +357,125 @@
   text-align: center;
   font-family: "Kanit", sans-serif;
   background-attachment: scroll;
+}
+
+/* thinking css  */
+.thinking {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-thinking {
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.thinking-text {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+}
+.thinking-text-h1 {
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.inner-thinkin-divs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+.thinking-imagediv {
+  width: 50%;
+  height: 90%;
+  /* border: 2px solid orange; */
+  background-image: url("../assets/m16.jpg");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thinking-imagediv-img {
+  height: 90%;
+  width: 100%;
+  transition: transform 1.5s ease;
+}
+.thinking-imagediv:hover .thinking-imagediv-img {
+  transform: scale(1.05);
+  transform-origin: center;
+}
+.thinking-textdiv {
+  width: 50%;
+  height: 90%;
+  /* border: 2px solid green; */
+  background-color: rgb(141, 13, 13);
+  color: white;
+  position: relative;
+}
+.thinking-textdiv .h1 {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 45px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-textdiv .h2 {
+  text-align: left;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  font-size: 45px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-textdiv h5 {
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 22px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-btn1 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.thinking-btn2 {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.thinking-btn3 {
+  position: absolute;
+  bottom: 10%;
+  left: 34%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
 }

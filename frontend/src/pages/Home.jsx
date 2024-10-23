@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import thinkingimage from "../assets/m16.jpg";
 
 function Home() {
   const [text, setText] = useState("make");
@@ -111,7 +112,32 @@ function Home() {
       {/* ---------- featured section ---------- */}
 
       {/* ---------- Thinking section ---------- */}
-      <div></div>
+      <div className="thinking">
+        <div className="inner-thinking">
+          {/* <div className="inner-think"> */}
+          <div className="thinking-text">
+            <h1 className="thinking-text-h1">Thinking</h1>
+          </div>
+          <div className="inner-thinkin-divs">
+            <div className="thinking-imagediv">
+              <img
+                src={thinkingimage}
+                alt="image"
+                className="thinking-imagediv-img"
+              />
+            </div>
+            <div className="thinking-textdiv">
+              <h1 className="h1">Refresh, repurpose, reimagine: </h1>
+              <h1 className="h2">Our approach to retrofit</h1>
+              <h5>By Oliver Hall</h5>
+              <button className="thinking-btn1">refurbishpment</button>
+              <button className="thinking-btn2">Retrofit</button>
+              <button className="thinking-btn3">sustainability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
       {/* ---------- Thinking section ---------- */}
     </>
   );
