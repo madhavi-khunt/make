@@ -479,3 +479,245 @@ button:hover {
   padding: 2px 5px;
   border-radius: 5px;
 }
+
+/* slider css */
+.slider-div {
+  margin-top: 100px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  /* border: 2px solid palevioletred; */
+}
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 86%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+.swiper-slide:hover .drag-text {
+  opacity: 1;
+}
+.drag-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  /* padding: 50px; */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.slide-content h5 {
+  text-align: left;
+  padding: 15px 0px 10px 0px;
+  color: #575757;
+  font-size: 20px;
+  /* font-family: "Kanit", sans-serif; */
+}
+.slide-content h3 {
+  text-align: left;
+  font-size: 23px;
+  padding: 0px 0px 15px 0px;
+  font-family: "Kanit", sans-serif;
+}
+.slide-content span {
+  display: flex;
+}
+.slide-content span button {
+  padding: 2px 5px;
+  color: #bab8b8;
+  font-size: 13px;
+  border: 1px solid #bab8b8;
+  border-radius: 5px;
+  background: transparent;
+  margin: 0px 10px 0px 0px;
+}
+
+/* studios section css */
+.studios {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid goldenrod; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+}
+.inner-studios {
+  width: 86%;
+  height: auto;
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.studios-text h1 {
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  padding: 10px 0px 20px 0px;
+}
+.studios-imgdiv {
+  width: 100%;
+  height: 70vh;
+  /* border: 2px solid palevioletred; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.studios-imgl {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/london.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.studios-imgl h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgh {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/hongkong.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgh h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgs {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/sydney.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgs h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgsh {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/shanghai.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgsh h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgsh::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 24, 24, 0.155); /* Adjust the opacity as needed */
+}
+
+

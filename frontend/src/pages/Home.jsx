@@ -1,8 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import thinkingimage from "../assets/m16.jpg";
+import { FreeMode } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import s1 from "../assets/s1.jpg";
+import s2 from "../assets/s2.jpg";
+import s3 from "../assets/s3.jpg";
+import s4 from "../assets/s4.jpg";
+import s5 from "../assets/s5.jpg";
+import s6 from "../assets/s6.jpg";
+import s7 from "../assets/s7.jpg";
+import s8 from "../assets/s8.jpg";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 function Home() {
   const [text, setText] = useState("make");
@@ -27,6 +42,18 @@ function Home() {
     }, 3000);
 
     return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
+
+  // for cursor
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  // Track mouse movement inside the slide
+  const handleMouseMove = useCallback((e) => {
+    const { left, top } = e.currentTarget.getBoundingClientRect();
+    setCursorPosition({
+      x: e.clientX - left,
+      y: e.clientY - top,
+    });
   }, []);
 
   return (
@@ -139,6 +166,174 @@ function Home() {
       </div>
       {/* </div> */}
       {/* ---------- Thinking section ---------- */}
+
+      {/* ---------- slider section ---------- */}
+      <div className="slider-div">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
+          modules={[FreeMode]}
+          className="mySwiper"
+          grabCursor={true}
+        >
+          {Array(1)
+            .fill(0)
+            .map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className="slide-content" onMouseMove={handleMouseMove}>
+                  <img src={s1} alt="slider1" />
+                  <h5>21.10.2024</h5>
+                  <h3>Make models: Station Row section model</h3>
+                  <span>
+                    <button>Model</button> <button>Model Monday</button>
+                  </span>
+                  <span
+                    className="drag-text"
+                    style={{
+                      top: `${cursorPosition.y}px`,
+                      left: `${cursorPosition.x}px`,
+                    }}
+                  >
+                    Drag
+                  </span>
+                </div>
+              </SwiperSlide>
+            ))}
+          {Array(1)
+            .fill(0)
+            .map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className="slide-content" onMouseMove={handleMouseMove}>
+                  <img src={s2} alt="slider1" />
+                  <h5>03.10.2024</h5>
+                  <h3>Developing in the city: New Build vs Retrofit</h3>
+                  <span>
+                    <button>refurbishpment</button> <button>Retrofit</button>
+                    <button>sustainability</button>
+                  </span>
+                  <span
+                    className="drag-text"
+                    style={{
+                      top: `${cursorPosition.y}px`,
+                      left: `${cursorPosition.x}px`,
+                    }}
+                  >
+                    Drag
+                  </span>
+                </div>
+              </SwiperSlide>
+            ))}
+          {Array(1)
+            .fill(0)
+            .map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className="slide-content" onMouseMove={handleMouseMove}>
+                  <img src={s3} alt="slider1" />
+                  <h5>19.09.2024</h5>
+                  <h3>Tall buildings photo essay</h3>
+                  <span>
+                    <button>Residential</button>
+                    <button>Retrofit</button> <button>Tall buldings</button>
+                    <button>Workplace</button>
+                  </span>
+                  <span
+                    className="drag-text"
+                    style={{
+                      top: `${cursorPosition.y}px`,
+                      left: `${cursorPosition.x}px`,
+                    }}
+                  >
+                    Drag
+                  </span>
+                </div>
+              </SwiperSlide>
+            ))}
+          <SwiperSlide>
+            <div className="slide-content">
+              <img src={s4} alt="slider1" style={{ height: "345px" }} />
+              <h5>10.09.2024</h5>
+              <h3>Refresh, repurpose, reimagine: Our approach to retrofit</h3>
+              <span>
+                <button>refurbishpment</button> <button>Retrofit</button>
+                <button>sustainability</button>
+              </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <img src={s5} alt="slider1" />
+              <h5>29.07.2024</h5>
+              <h3>Make models: Milton Avenue/Station Ro w</h3>
+              <span>
+                <button>Model</button> <button>Model Monday</button>
+              </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <img src={s6} alt="slider1" />
+              <h5>17.07.2024</h5>
+              <h3>Optimising the value of build-to-rent</h3>
+              <span>
+                <button>Residential</button>
+              </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <img src={s7} alt="slider1" />
+              <h5>06.06.2024</h5>
+              <h3>
+                Making luxury circular: rethinking re-use in retail fit-outs
+              </h3>
+              <span>
+                <button>Circular economy</button> <button>Retail</button>
+                <button>sustainability</button>
+              </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slide-content">
+              <img src={s8} alt="slider1" />
+              <h5>15.05.2024</h5>
+              <h3>
+                AI integration at Make: shaping the future of architecture
+              </h3>
+              <span>
+                <button>AI</button> <button>Architecture</button>
+                <button>Artificial intelligence</button>
+                <button>Technology</button>
+              </span>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      {/* ---------- slider section ---------- */}
+
+      {/* ---------- studios section ---------- */}
+      <div className="studios">
+        <div className="inner-studios">
+          <div className="studios-text">
+            <h1>Studios</h1>
+          </div>
+        </div>
+      </div>
+      <div className="studios-imgdiv">
+        <div className="studios-imgl">
+          <h3>London</h3>
+        </div>
+        <div className="studios-imgh">
+          <h3>Hong Kong</h3>
+        </div>
+        <div className="studios-imgs">
+          <h3>Sydney</h3>
+        </div>
+        <div className="studios-imgsh">
+          <h3>Shanghai</h3>
+        </div>
+      </div>
+      {/* ---------- studios section ---------- */}
     </>
   );
 }
