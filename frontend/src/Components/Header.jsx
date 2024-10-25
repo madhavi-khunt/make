@@ -31,10 +31,9 @@ function Header() {
                 isScrolled ? "text-visible" : "text-hidden"
               }`}
             >
-              {/* <Link to="/" className="kanit-bold">
-                make
-              </Link> */}
-              <img src={logo} alt="Logo" className="header-logo" />
+              <Link to="/" className="kanit-bold">
+                <img src={logo} alt="Logo" className="header-logo" />
+              </Link>
             </h1>
             <nav className="nav-links">
               <Link to="/meetmake">Meet Make</Link>
