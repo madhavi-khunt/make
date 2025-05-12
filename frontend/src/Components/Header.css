@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+/* Ensure the header takes up 80% width and is centered */
+
+/* Default styling for the header */
+
+.scrolled {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Example: Change background on scroll */
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: center;
+  padding: 20px 0;
+  transition: top 0.3s, background-color 0.3s;
+  z-index: 1000;
+}
+main {
+  padding-top: 100px; /* Adjust based on header height */
+}
+main {
+  background-color: lightgray;
+}
+header div {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between;
+}
+/* Hide header when scrolling down */
+.header.hide {
+  top: -100px;
+}
+.header-logo {
+  height: 30px;
+  width: 100px;
+}
+/* Show header with white background when scrolling up */
+.header.show {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header content container */
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header text and links */
+.header-text a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.text-hidden {
+  opacity: 0; /* Hidden text */
+  transform: translateX(-10px); /* Slight left shift */
+  transition: opacity 0.5s, transform 0.5s; /* Smooth show effect */
+}
+
+/* Header text visible after scroll */
+.text-visible {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(0); /* Reset position */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Change text color to red when scrolled */
+.text-visible a {
+  color: rgb(232, 4, 4);
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-stretch: condensed;
+}
+.nav-links {
+  /* border: 2px solid white; */
+  padding-right: 28px;
+}
+.nav-links a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 22px;
+  color: #fff;
+  /* font-weight: bold; */
+}
+
+.nav-links a:hover {
+  color: #ffffffd1;
+}
+.header.scrolled {
+  background-color: white;
+}
+
+.header.scrolled .nav-links a {
+  color: black;
+}
+
+/* -------------footer css------------- */
+footer {
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #14141415;
+}
+.inner-footer1 {
+  width: 42%;
+  height: 100%;
+  /* border: 2px solid brown; */
+  padding-top: 100px;
+}
+.footer-div1 {
+  /* border: 1px solid olive; */
+  height: 250px;
+}
+.fonticon {
+  padding: 8.5px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: #2524243e;
+  color: #fff;
+  margin-right: 12px;
+}
+.fonticon:hover {
+  background: #000;
+  color: #fff;
+}
+.footer-div2 {
+  height: 150px;
+  width: 100%;
+  /* border: 1px solid olive; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.certified {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.certified .img {
+  height: 60%;
+  width: 20%;
+  /* border: 1px solid red; */
+  border-right: 1px solid gray;
+  padding-right: 25px;
+}
+.certified .img1 {
+  text-align: center;
+  height: 45%;
+  width: 40%;
+  padding-left: 25px;
+}
+
+.footer-div3 p {
+  font-size: 18px;
+}
+
+.inner-footer2 {
+  width: 42%;
+  height: 100%;
+  /* border: 2px solid brown; */
+  padding-top: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.inner-footer2 div {
+  height: 200px;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-top: 0px;
+}
+.inner-footer2 div:nth-child(3) {
+  /* background-color: yellow; */
+  margin-top: -100px;
+}
+.inner-footer2 div:nth-child(4) {
+  margin-top: -100px;
+}
+.bi-geo-alt-fill {
+  color: rgb(209, 12, 12);
+}
+.inner-footer2 div h5 {
+  font-size: 22px;
+  font-family: "Kanit", sans-serif;
+}
+.inner-footer2 div p {
+  font-size: 20px;
+}
+.inner-footer2 div p:nth-last-child(3) {
+  padding-bottom: 20px;
+}

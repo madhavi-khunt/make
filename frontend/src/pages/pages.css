@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:hover {
+  cursor: pointer;
+}
+/*  ----------------- home page css -----------------  */
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Video Background */
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.116); /* Adjust the opacity as needed */
+  z-index: 2;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 3; /* Ensure it appears above the video and overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* Text Fade Effect */
+.fade-text {
+  font-size: 48px;
+  margin: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-button {
+  position: absolute;
+  top: 60%;
+  left: 7.5%;
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.441);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+/* Expanded Style for 'Imagine More' */
+.expanded {
+  position: absolute;
+  top: 50%;
+  left: 36.5%;
+  font-size: 134px;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  transform: translate(-60%, -50%); /* Shift slightly left */
+}
+
+/* Normal Style for 'Welcome to Make' and 'Make' */
+.normal {
+  position: absolute;
+  top: 50%;
+  left: 17.5%;
+  font-family: "Kanit", sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  transform: translate(-50%, -50%); /* Centered */
+}
+
+/* projects css */
+.project {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/m1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.314);
+}
+
+.project-h1 {
+  color: white;
+  position: absolute;
+  top: 19%;
+  left: 7.5%;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  z-index: 2;
+}
+.project-h2 {
+  color: white;
+  position: absolute;
+  top: 26%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.project-button {
+  position: absolute;
+  top: 36%;
+  left: 7.5%;
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.441);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* who we are css  */
+.who {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/m3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.who::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.314); /* Adjust the opacity as needed */
+}
+
+.who-h1 {
+  color: white;
+  position: absolute;
+  top: 19%;
+  left: 7.5%;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  z-index: 2;
+}
+.who-h2 {
+  color: white;
+  position: absolute;
+  top: 26%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h3 {
+  color: white;
+  position: absolute;
+  top: 33%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h4 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+.who-h5 {
+  color: white;
+  position: absolute;
+  top: 47%;
+  left: 7.5%;
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+}
+
+.who-button {
+  position: absolute;
+  top: 57%;
+  left: 7.5%;
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.441);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+/* feature css */
+.feature {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+.inner-feature {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+.inner-feature-textdiv {
+  /* border: 1px solid salmon; */
+  height: auto;
+  padding: 20px 0px;
+}
+.inner-feature-text {
+  margin-left: 8.5%;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+}
+.inner-feature-imagediv {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m4.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-feature-imagediv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.146); /* Adjust the opacity as needed */
+}
+.feature-text {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
+}
+
+.feature-2 {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.inner-feature-2 {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+
+.inner-feature-imagediv-2 {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m2.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-text-2 {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
+}
+
+.feature-3 {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.inner-feature-3 {
+  width: 86%;
+  /* border: 1px solid purple; */
+}
+
+.inner-feature-imagediv-3 {
+  position: relative;
+  height: 120vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("../assets/m5.jpg"); /* Replace with your image path */
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-feature-imagediv-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.feature-text-3 {
+  color: white;
+  font-size: 120px;
+  z-index: 2;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  background-attachment: scroll;
+}
+
+/* thinking css  */
+.thinking {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-thinking {
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.thinking-text {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+}
+.thinking-text-h1 {
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.inner-thinkin-divs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+.thinking-imagediv {
+  width: 50%;
+  height: 90%;
+  /* border: 2px solid orange; */
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thinking-imagediv-img {
+  height: 90%;
+  width: 100%;
+  transition: transform 1.5s ease;
+}
+.thinking-imagediv:hover .thinking-imagediv-img {
+  transform: scale(1.05);
+  transform-origin: center;
+}
+.thinking-textdiv {
+  width: 50%;
+  height: 90%;
+  /* border: 2px solid green; */
+  background-color: rgb(141, 13, 13);
+  color: white;
+  position: relative;
+}
+.thinking-textdiv .h1 {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 45px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-textdiv .h2 {
+  text-align: left;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  font-size: 45px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-textdiv h5 {
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 22px;
+  font-family: "Kanit", sans-serif;
+}
+.thinking-btn1 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.thinking-btn2 {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.thinking-btn3 {
+  position: absolute;
+  bottom: 10%;
+  left: 34%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+/* slider css */
+.slider-div {
+  margin-top: 100px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  /* border: 2px solid palevioletred; */
+}
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 86%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+.swiper-slide:hover .drag-text {
+  opacity: 1;
+}
+.drag-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  /* padding: 50px; */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.slide-content h5 {
+  text-align: left;
+  padding: 15px 0px 10px 0px;
+  color: #575757;
+  font-size: 20px;
+  /* font-family: "Kanit", sans-serif; */
+}
+.slide-content h3 {
+  text-align: left;
+  font-size: 23px;
+  padding: 0px 0px 15px 0px;
+  font-family: "Kanit", sans-serif;
+}
+.slide-content span {
+  display: flex;
+}
+.slide-content span button {
+  padding: 2px 5px;
+  color: #bab8b8;
+  font-size: 13px;
+  border: 1px solid #bab8b8;
+  border-radius: 5px;
+  background: transparent;
+  margin: 0px 10px 0px 0px;
+}
+
+/* studios section css */
+.studios {
+  height: auto;
+  width: 100%;
+  /* border: 2px solid goldenrod; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+}
+.inner-studios {
+  width: 86%;
+  height: auto;
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.studios-text h1 {
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  padding: 10px 0px 20px 0px;
+}
+.studios-imgdiv {
+  width: 100%;
+  height: 70vh;
+  /* border: 2px solid palevioletred; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.studios-imgl {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/london.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.studios-imgl h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgh {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/hongkong.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgh h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgs {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/sydney.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgs h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.039); /* Adjust the opacity as needed */
+}
+.studios-imgsh {
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  background-image: url("../assets/shanghai.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studios-imgsh h3 {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-family: "Kanit", sans-serif;
+  font-size: 60px;
+}
+.studios-imgsh::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 24, 24, 0.155); /* Adjust the opacity as needed */
+}
