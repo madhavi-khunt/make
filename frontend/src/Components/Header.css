@@ -22,12 +22,14 @@
   padding: 20px 0;
   transition: top 0.3s, background-color 0.3s;
   z-index: 1000;
+  color: #000;
 }
 main {
   padding-top: 100px; /* Adjust based on header height */
 }
 main {
-  background-color: lightgray;
+  background-color: #fff;
+  /* color: #000; */
 }
 header div {
   height: 100%;
@@ -64,7 +66,7 @@ header div {
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 .text-hidden {
   opacity: 0; /* Hidden text */
@@ -78,6 +80,7 @@ header div {
   z-index: 2;
   transform: translateX(0); /* Reset position */
   transition: opacity 0.5s, transform 0.5s;
+  /* color: rgb(232, 4, 4); */
 }
 
 /* Change text color to red when scrolled */
@@ -96,12 +99,12 @@ header div {
   text-decoration: none;
   margin-left: 20px;
   font-size: 22px;
-  color: #fff;
+  color: #000;
   /* font-weight: bold; */
 }
 
 .nav-links a:hover {
-  color: #ffffffd1;
+  color: #000;
 }
 .header.scrolled {
   background-color: white;

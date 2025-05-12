@@ -14,6 +14,7 @@ import {
 import f7 from "../assets/f7.png";
 import f8 from "../assets/f8.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -21,12 +22,50 @@ function Footer() {
       <footer>
         <div className="inner-footer1">
           <div className="footer-div1">
-            <FontAwesomeIcon icon={faXTwitter} className="fonticon" />
-            <FontAwesomeIcon icon={faLinkedinIn} className="fonticon" />
-            <FontAwesomeIcon icon={faInstagram} className="fonticon" />
-            <FontAwesomeIcon icon={faVimeoV} className="fonticon" />
-            <FontAwesomeIcon icon={faYoutube} className="fonticon" />
-            <FontAwesomeIcon icon={faComments} className="fonticon" />
+            <Link
+              to={
+                "https://x.com/i/flow/login?redirect_after_login=%2Fmakearchitects"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faXTwitter} className="fonticon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              to={"https://www.linkedin.com/company/make-architects/"}
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} className="fonticon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              to={"https://www.instagram.com/make_architects/"}
+            >
+              <FontAwesomeIcon icon={faInstagram} className="fonticon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              to={"https://www.vimeo.com/makearchitects"}
+            >
+              <FontAwesomeIcon icon={faVimeoV} className="fonticon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              to={"https://www.youtube.com/makearchitects"}
+            >
+              <FontAwesomeIcon icon={faYoutube} className="fonticon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              to={"https://www.makearchitects.com/make-architects-on-wechat/"}
+            >
+              <FontAwesomeIcon icon={faComments} className="fonticon" />
+            </Link>
           </div>
           <div className="footer-div2">
             <div className="certified">
@@ -42,12 +81,16 @@ function Footer() {
         <div className="inner-footer2">
           <div>
             <h5>
-              London <i className="bi bi-geo-alt-fill"></i>{" "}
+              <Link href="" underline="none">
+                London <i className="bi bi-geo-alt-fill"></i>{" "}
+              </Link>
             </h5>
             <p>32 Cleveland Street</p>
             <p>London W1T 4JY</p>
             <p>United Kingdom</p>
-            <FontAwesomeIcon icon={faPhone} className="fonticon" />
+            <Link href="tel:+8320135519">
+              <FontAwesomeIcon icon={faPhone} className="fonticon" />
+            </Link>
             <FontAwesomeIcon icon={faEnvelope} className="fonticon" />
           </div>
           <div>
